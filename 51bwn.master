@@ -1,0 +1,128 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="51bwn.master.cs" Inherits="admin_master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>情随事迁个人博客</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+body,ul,li{margin:0;padding:0;}
+li{ list-style:none;}
+
+.menu_2012129_1{width:958px;height:52px; background:url(logo/35068264.gif) repeat-x; margin:0 auto;}
+.menu_2012129_1 ul{ width:9580px;float:left; display:inline;}
+.menu_2012129_1 ul li{ width:96px;float:left;}
+.menu_2012129_1 ul li a{width:94px;height:34px;float:left; font-size:12px; text-align:center; line-height:34px; margin-top:6px; display:inline; color:#fff;margin-left:1px; margin-right:1px;}
+.menu_2012129_1 ul li a:hover{background:url(logo/694886526.gif) repeat-x; color:#FFFFFF;
+     }
+     
+     
+.zheng {
+    margin: 2px 0px;
+    width: 940px;
+    display: block;
+    text-align: left;
+    clear: both;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000000;
+    background-color:#FFFFFF;
+    border: 1px solid #000000;
+    padding: 2px 9px;
+    list-style: none outside none;
+}
+ .zheng:after {
+    content: ".";
+    display: block;
+    height: 0px;
+    clear: both;
+}
+.good  {
+    width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0px;
+        }
+.zheng_juzhong
+	{
+ text-align :center;
+}
+	
+	
+	
+	
+	
+	.bwn
+{
+	width:958px;
+text-align:center;
+font-size: 12px;
+height: auto;
+margin-left: 10px;
+margin-top:5px;
+ margin-bottom:5px;
+ display: inline;
+background-color:#FFFFFF;
+overflow: hidden;
+display: block;
+border: 1px solid #000;
+ margin: 0px auto;
+
+ 
+	}   
+
+	
+      
+                              
+                              
+</style>
+
+
+    </head>
+<body>
+<!-- style="background-image: url('file:///W:/study/asp_net/罗正_实训_2014_11/logo/bg.jpg'); background-repeat: repeat"-->
+
+    <form id="form1" runat="server">
+    <script language =javascript >window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"5","bdPos":"right","bdTop":"100"},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+<div id="header">
+<h2  style="margin:0px;clear:both; text-align:center;">
+
+<img src="logo/logo.gif" alt="情随事迁" />
+     </h2></div>
+
+<div class="menu_2012129_1">
+	<ul>
+    	<li><a href="default.aspx">首页</a></li>
+        <li><a href="web_photo.aspx">相册</a></li>
+        <li><a href="web_rizhi.aspx">博文</a></li>
+        <li><a href="guestbook_list.aspx">留言</a></li>
+        <li><a href="web_about.aspx">关于</a></li>
+
+    </ul>
+</div>
+<div class ="zheng_juzhong">
+<div class ="bwn"><asp:Label ID="Label_login" runat="server" Text="亲爱的游客，请先<a href=web_login.aspx>登录</a>或<a href=userreg.aspx>注册</a>"></asp:Label>
+</div>
+</div>
+
+<div class="good" >
+<div id="content"  class="zheng" >
+   <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+   <p style="height:auto;width:auto; text-align:center;">
+       ------------------------------------ 可编辑区域</p>
+  </asp:ContentPlaceHolder>
+  </div>
+  </div>
+<div id="footer" style="background-color:#000000;clear:both;text-align:center; color : #FFFFFF;">
+Copyright  © 12计算机网络-罗正 <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=694886526&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:694886526:52" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>694886526 
+群<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=91b8ef925e87b9bfa684102ad572914c2debcbef2821587c6d39a93e52f45522">
+<img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="黑界情迁CF/QQ机器人" title="黑界情迁CF/QQ机器人" /></a>106605356
+    在线:<asp:Label ID="Label_online" runat="server" Text="Label"></asp:Label>
+    总访问量:<asp:Label ID="Label_count" runat="server" Text="Label"></asp:Label>
+ </div>
+   </form>
+ </body>
+</html>
